@@ -1,0 +1,27 @@
+{
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/collective/training-sandbox"
+    }
+  ],
+  "env": {
+    "BUILDPACK_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+    "work": {
+      "quantity": 1
+    },
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "proba",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
